@@ -47,7 +47,7 @@ def create_contacts(contact_type, quantity):
             work_phone = fake.phone_number()
             contact = BusinessContact(name, surname, phone_number, mail, company, job_position, work_phone)
         else:
-            raise ValueError("Unknown business card type.")
+            raise ValueError("Unknown contact type.")
 
         contacts_list.append(contact)
 
